@@ -1,0 +1,10 @@
+import string
+def kaisa(s,k):
+    xiaoxie=string.ascii_lowercase
+    daxie=string.ascii_uppercase
+    before=string.ascii_letters
+    after=xiaoxie[k:]+xiaoxie[:k]+daxie[k:]+daxie[:k]
+    table=''.maketrans(before,after)
+    return s.translate(table)
+s='Upper can return other .'
+kaisa(s,3)

@@ -1,0 +1,3 @@
+name=''.maketrans('abcdefghi123456789','123456789abcdefghi')
+s="python+1=the python"
+s.translate(name)
